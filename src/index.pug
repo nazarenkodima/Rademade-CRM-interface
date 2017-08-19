@@ -1,0 +1,87 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+    title Creative CRM
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700', rel='stylesheet')
+    // build:css css/vendor.css
+    link(rel='stylesheet', href='../node_modules/normalize.css/normalize.css')
+    link(rel='stylesheet', href='../node_modules/bootstrap/dist/css/bootstrap.css')
+    // endbuild
+    link(rel='stylesheet', href='css/main.css')
+  body
+    .app
+      .container-fluid
+        .row
+          main.main-window.col-md-9.col-md-push-3
+            header.top-bar
+              .top-bar__breadcrumbs.col-md-3
+                span.customer-list Customers
+                span.greater-than-sign &gt;
+                span.customer Max Jones
+              .top-bar__input-form.col-md-6.text-right
+                input.input-form__input_styled(type='text', placeholder='search')
+                span.input-form__search-icon
+              .top-bar__notification.col-md-1.text-center
+                span.notification-icon
+              .top-bar__avatar.col-md-2
+                span.avatar-icon
+                span.agent-name Hello Lauren
+                
+            .customer-info
+              .customer-info__item
+                .customer-info__image
+                .customer-info__body
+                  .body-top
+                    h2.body-top__title
+                      | Max Jones 
+                      span gold
+                    p.body-top__position Sales &amp; Marketing
+                  .body-bottom
+                    .body-bottom__title
+                      | Phone 
+                      span.body-bottom__details (+31) 140 175 468
+                    .body-bottom__title
+                      | Address
+                      span.body-bottom__details Binnenweg 50, Rotterdam
+                    .body-bottom__quote
+                      a.quote-btn(href='#') Create Quote
+            nav.navigation
+              ul.navigation-list
+                li.navigation-list__item.active Overview
+                li.navigation-list__item Orders
+                li.navigation-list__item Payments
+            footer.base
+
+          aside.side-bar.col-md-3.col-md-pull-9
+            h1.side-bar__title.heading-styled CRM
+            .side-bar__side-menu
+              ul.side-bar-list
+                li.side-bar-list__item
+                  .box
+                    .side-bar-list__icon.side-bar-list__icon_dashboard
+                    .side-bar-list__body
+                      h4.side-bar-list__title Dashboard
+                li.side-bar-list__item
+                  .box
+                    .side-bar-list__icon.side-bar-list__icon_report
+                    .side-bar-list__body
+                      h4.side-bar-list__title Reports
+                li.side-bar-list__item.active
+                  .box
+                    .side-bar-list__icon.side-bar-list__icon_customer
+                    .side-bar-list__body
+                      h4.side-bar-list__title Customers
+                li.side-bar-list__item
+                  .box
+                    .side-bar-list__icon.side-bar-list__icon_calendar
+                    .side-bar-list__body
+                      h4.side-bar-list__title Calendar
+                      
+    // build:js js/vendor.js
+    script(src='../node_modules/jquery/dist/jquery.min.js')
+    // endbuild
+    script(src='js/main.js')
+

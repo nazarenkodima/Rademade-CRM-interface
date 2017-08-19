@@ -1,0 +1,49 @@
+@import variables
+
+.side-bar
+  color: #fff
+  height: 100vh
+  padding: 0    
+  padding-top: 45px
+  background-color: $bg-color-dark
+  &__title
+  .heading-styled
+    color: $color-gold
+    font-size: 2em
+    letter-spacing: 0.025em
+    padding-left: 26px
+  &__side-menu
+  .side-bar-list
+    padding-top: 70px   
+    .box
+      display: flex  
+    &__item
+      padding: 26px 26px 0 26px
+      font-size: 1.235em
+      font-weight: 300
+      border-left: 5px solid transparent
+      cursor: pointer
+      &:after
+        content: ''
+        display: block
+        margin-top: 25px
+        width: 100%
+        height: 2px 
+        background-color: rgba(255,255,255,0.1)  
+    .active
+      background-color: $color-purple
+      border-left: 5px solid $color-gold  
+    &__icon
+      background-repeat: no-repeat
+      background-position: center center
+      height: 20px
+      width: 25px
+      margin-right: 20px
+    &__icon_dashboard
+      background-image: url('../img/dashboard.png')  
+    &__icon_report
+      background-image: url('../img/report.png')   
+    &__icon_customer
+      background-image: url('../img/customer.png')  
+    &__icon_calendar
+      background-image: url('../img/calendar.png')   
